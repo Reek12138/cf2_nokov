@@ -1,3 +1,4 @@
+#第一组飞机 ID 1 5 9 15 18 19
 crazyflies:
   - id: 1
     channel: 80
@@ -7,7 +8,7 @@ crazyflies:
     channel: 80
     initialPosition: [0.75, -1.25, 0.0]
     type: default
-  - id: 7
+  - id: 9
     channel: 80
     initialPosition: [0.75, -1.75, 0.0]
     type: default
