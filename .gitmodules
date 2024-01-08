@@ -14,3 +14,6 @@
 [submodule "externalDependencies/NatNetSDKCrossplatform"]
 	path = deps/NatNetSDKCrossplatform
 	url = https://github.com/whoenig/NatNetSDKCrossplatform.git
+[submodule "deps/nokov_sdk"]
+	path = deps/nokov_sdk
+	url = git@39.107.14.48:code/software/crazyfile/nokov_sdk.git
