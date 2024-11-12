@@ -158,6 +158,8 @@ include_directories(
 )
 
 ## Declare a cpp library
+
+
 add_library(libmotioncapture
   ${my_files}
 )
