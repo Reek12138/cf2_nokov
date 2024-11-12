@@ -1,4 +1,7 @@
-cmake_minimum_required(VERSION 2.8.3)
+# cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.13)  # 确保使用兼容的 CMake 版本
+cmake_policy(SET CMP0079 NEW)
+
 project(crazyswarm)
 
 
@@ -187,6 +190,18 @@ target_link_libraries(mocap_helper
   ${catkin_LIBRARIES}
   libmotioncapture
 )
+
+
+add_library(SeekerSDKClient SHARED IMPORTED)
+set_target_properties(SeekerSDKClient PROPERTIES 
+    IMPORTED_LOCATION /home/reek/crazyswarm/ros_ws/src/crazyswarm/externalDependencies/libmotioncapture/deps/nokov_sdk/lib/x64/libSeekerSDKClient.so
+)
+
+# 确保 libmotioncapture 链接 SeekerSDKClient
+target_link_libraries(libmotioncapture /home/reek/crazyswarm/ros_ws/src/crazyswarm/externalDependencies/libmotioncapture/deps/nokov_sdk/lib/x64/libSeekerSDKClient.so)
+
+
+
 
 #############
 ## Install ##

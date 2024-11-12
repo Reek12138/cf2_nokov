@@ -26,17 +26,17 @@ def run_sequence(scf, file_name):
 
 
 def read_pose(filename):
-    with open("./xiezhuanquan/" + filename, 'r') as f:
+    with open("./8cfs/" + filename, 'r') as f:
         coords = []
         for line in f:
             parts = line.split()
-            x, y, z = float(parts[0]), float(parts[1]), float(parts[2])
+            x, y, z = float(parts[0]), -float(parts[1]), float(parts[2])
             coords.append([x, y, z])
     return coords
 
 
 def takeoff():
-    Z = 1.5
+    Z = 1.0
     allcfs.takeoff(targetHeight=Z, duration=3.0 + Z)
     timeHelper.sleep(3 + Z)
 
