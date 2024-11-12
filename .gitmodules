@@ -7,7 +7,7 @@
 	url = https://github.com/USC-ACTLab/libobjecttracker
 [submodule "ros_ws/src/externalDependencies/libmotioncapture"]
 	path = ros_ws/src/crazyswarm/externalDependencies/libmotioncapture
-	url = git@39.107.14.48:code/software/crazyfile/libmotioncapture.git
+	url = https://github.com/Reek12138/cf2_nokov.git
 [submodule "ros_ws/src/crazyflie_tools"]
 	path = ros_ws/src/crazyflie_tools
 	url = https://github.com/whoenig/crazyflie_tools.git
